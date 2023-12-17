@@ -1,7 +1,48 @@
-/*RESET*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cell {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px solid white;
+    background-color: gold;
+    color: purple;
+    cursor: pointer;
+}
+
+.cell-100{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.cell-81{
+    width: calc(1000px / 9);
+    height: calc(1000px / 9);
+    line-height: calc(1000px / 9);
+}
+
+.cell-49{
+    width: calc(1000px / 7);
+    height: calc(1000px / 7);
+    line-height: calc(1000px / 7);
+}
+
+.purple-color{
+    color: purple;
+}
+
+.cell.bomb {
+    background-image: url('../img/big-bomb.png');
+    background-size: cover;
+    color: transparent;
+    background-color: red;
+}
+
+.cell.clicked {
+    background-color: purple;
+    color: gold;
 }
